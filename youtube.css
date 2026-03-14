@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+body {
+  background-color: #fffcfc;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgb(255, 255, 255);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo-section {
+  display: flex;
+  gap: 10px;
+}
+
+.logo {
+  width: 90px;
+  align-items: center;
+}
+
+.search-section {
+  display: flex;
+  flex: 0 1 600px;
+}
+
+.search-section input {
+  width: 100%;
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+.user-section {
+  cursor: pointer;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+.user-section .icon1 {
+  color: #000000;
+  display: flex;
+  height: auto;
+  width: auto;
+  border: 2px solid rgb(62, 54, 54);
+  border-radius: 20px;
+  padding: 5px 10px;
+  align-items: center;
+}
+.user-section img {
+  width: 20px;
+  height: 20px;
+}
+.user-section .icon1:hover{
+    background-color: #e5e5e5;
+}
+
+.search-btn {
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background: #f8f8f8;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+/* Layout */
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 240px;
+  height: calc(100vh - 56px);
+  background: rgb(255, 255, 255);
+  padding: 15px;
+  position: sticky;
+  top: 56px;
+}
+
+.nav-item {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.nav-item img {
+  width: 15px;
+  height: 15px;
+}
+.nav-item:hover,
+.nav-item.active {
+  background-color: #e6d9d9;
+}
+
+/* Video Grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.video-card {
+  cursor: pointer;
+}
+
+.thumbnail {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: #ddd;
+  border-radius: 12px;
+}
+.thumbnail img {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.video-info {
+  display: flex;
+  margin-top: 12px;
+}
+
+.channel-icon {
+  width: 40px;
+  height: 35px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.channel-icon img {
+  height: 40px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.text-content h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.text-content p {
+  font-size: 0.85rem;
+  color: #000000;
+}
